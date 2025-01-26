@@ -26,6 +26,7 @@ def order_process_flow(order_id, items):
     payment_response = process_payment(order_id, total_price)
     print(f"{payment_response['message']}: ${total_price:.2f}")
 
+
 if __name__ == "__main__":
     add_menu_item(1, "Pizza", 15.0)
     add_menu_item(2, "Burger", 10.0)
